@@ -3,3 +3,4 @@ pymongo
 werkzeug
 flask_cors
 python-dotenv
+requests

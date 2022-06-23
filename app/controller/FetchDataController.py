@@ -1,15 +1,20 @@
+from email import header
 import os
-from flask import Flask, request
-from dotenv import load_dotenv
+import json
+import requests
+from flask import Flask
+from dotenv import load_dotenv, find_dotenv
 
 app = Flask("FetchData")
-load_dotenv()
-api_id = os.getenv('API_ID')
+load_dotenv(find_dotenv('./config/.env'))
+app_id = os.getenv('APP_ID')
+URL = "https://dummyapi.io/data/v1/user"
 
 @app.route('/fetchData', methods=['GET'])
 def fetchData():
-    
-    headers = {"Content-type": "application/json", "api-id" : api_id}
-    
-    
-    return "Hello World....!"
+    request_header = {"Content-Type": "application/json", "app-id" : app_id}
+    response = requests.get(url=URL, headers=request_header)    
+    return response.content
+
+
+
