@@ -10,7 +10,7 @@ class DbConnection:
                         level=logging.INFO,
                         format= '%(asctime)s - %(levelname)s - %(message)s',
                     )
-        load_dotenv(find_dotenv('.env'))
+        load_dotenv(find_dotenv('./../../config/.env'))
         self.DB_NAME = os.getenv('DB_NAME')
         self.USERS_COLLECTION_NAME = os.getenv('USERS_COLLECTION_NAME')
         self.USERS_POST_DATA_COLLECTION_NAME = os.getenv('USERS_POST_DATA_COLLECTION_NAME')
@@ -21,7 +21,7 @@ class DbConnection:
             myDb = myClient[self.DB_NAME]
             myUsersCollection = myDb[self.USERS_COLLECTION_NAME]
             myPostDataCollection = myDb[self.USERS_POST_DATA_COLLECTION_NAME]
-            print('myclient', myClient)
+            # print('myclient', myClient)
             return myClient
         except Exception as error:
             print('Database access error occured....!')

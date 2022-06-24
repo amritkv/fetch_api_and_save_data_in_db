@@ -12,18 +12,22 @@ class fetchAndSave:
     def __init__(self):
         pass
 
-    @app.route('/fetchAndSaveData', methods = ['GET'])
-    def fetchData():
+    @app.route('/fetchAndSaveUsersData', methods = ['GET'])
+    def fetchAndSaveUsersData():
 
-        fetch_data_status = ServiceLayer.fetchAndSaveService().fetchUersDataService()
-        if fetch_data_status == 200:
+        fetch_and_save_users_data_status = ServiceLayer.fetchAndSaveService().fetchAndSaveUersDataService()
+        if fetch_and_save_users_data_status == 200:
             return json.dumps({"Message" : "Successfully saved users data into database....!"})
 
         else:
-            return json.dumps({"Error" : fetch_data_status})
+            return json.dumps({"Error" : fetch_and_save_users_data_status})
 
-    @app.route('/fetchUsersPostData', methods = ['GET'])
-    def fetchUsersPostData():
+    @app.route('/fetchAndSaveUsersPostData', methods = ['GET'])
+    def fetchAndSaveUsersPostData():
 
-        fetch_posts_data_status = ServiceLayer.fetchAndSaveService().fetchUsersPostDataService()
+        fetch_and_save_users_posts_data_status = ServiceLayer.fetchAndSaveService().fetchAndSaveUsersPostDataService()
+        if fetch_and_save_users_posts_data_status == 1:
+            return json.dumps({"message" : "Successfully saved users post data into database....!"})
+        else:
+            return json.dumps({"Error" : fetch_and_save_users_posts_data_status})
         
