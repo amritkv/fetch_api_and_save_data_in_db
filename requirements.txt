@@ -4,3 +4,4 @@ werkzeug
 flask_cors
 python-dotenv
 requests
+dependency_injector

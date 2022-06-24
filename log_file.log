@@ -1,0 +1,469 @@
+2022-06-24 11:02:37,385 - INFO - 127.0.0.1 - - [24/Jun/2022 11:02:37] "[35m[1mGET /fetchAndSaveData HTTP/1.1[0m" 500 -
+2022-06-24 11:02:37,724 - INFO - 127.0.0.1 - - [24/Jun/2022 11:02:37] "GET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2022-06-24 11:02:37,726 - INFO - 127.0.0.1 - - [24/Jun/2022 11:02:37] "GET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2022-06-24 11:02:37,966 - INFO - 127.0.0.1 - - [24/Jun/2022 11:02:37] "GET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2022-06-24 11:02:38,091 - INFO - 127.0.0.1 - - [24/Jun/2022 11:02:38] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-06-24 11:04:20,253 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\service\\FetchAndSaveService.py', reloading
+2022-06-24 11:04:28,306 - INFO - 127.0.0.1 - - [24/Jun/2022 11:04:28] "[35m[1mGET /fetchAndSaveData HTTP/1.1[0m" 500 -
+2022-06-24 11:04:28,534 - INFO - 127.0.0.1 - - [24/Jun/2022 11:04:28] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2022-06-24 11:04:28,630 - INFO - 127.0.0.1 - - [24/Jun/2022 11:04:28] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2022-06-24 11:04:28,642 - INFO - 127.0.0.1 - - [24/Jun/2022 11:04:28] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-06-24 11:04:28,973 - INFO - 127.0.0.1 - - [24/Jun/2022 11:04:28] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-06-24 11:10:13,812 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\controller\\FetchDataController.py', reloading
+2022-06-24 11:15:12,482 - ERROR - 'DbConnection' object has no attribute 'DB_NAME'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+AttributeError: 'DbConnection' object has no attribute 'DB_NAME'
+2022-06-24 11:15:12,496 - INFO - 127.0.0.1 - - [24/Jun/2022 11:15:12] "[35m[1mGET /fetchAndSaveData HTTP/1.1[0m" 500 -
+2022-06-24 11:15:12,665 - INFO - 127.0.0.1 - - [24/Jun/2022 11:15:12] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2022-06-24 11:15:12,834 - INFO - 127.0.0.1 - - [24/Jun/2022 11:15:12] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2022-06-24 11:15:12,844 - INFO - 127.0.0.1 - - [24/Jun/2022 11:15:12] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-06-24 11:15:13,177 - INFO - 127.0.0.1 - - [24/Jun/2022 11:15:13] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-06-24 11:15:31,182 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\dataAccessLayer\\FetchAndSaveDataLayer.py', reloading
+2022-06-24 11:15:36,176 - ERROR - 'DbConnection' object has no attribute 'DB_NAME'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+AttributeError: 'DbConnection' object has no attribute 'DB_NAME'
+2022-06-24 11:15:36,177 - ERROR - 'FetchAndSaveDataLayer' object has no attribute 'APP_ID'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 32, in fetchUsersData
+    request_header = {"Content-Type": "application/json", "app-id" : self.APP_ID}
+AttributeError: 'FetchAndSaveDataLayer' object has no attribute 'APP_ID'
+2022-06-24 11:15:36,178 - ERROR - 'NoneType' object has no attribute 'self'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 42, in fetchUsersData
+    db.self.DB_NAME.self.USERS_COLLECTION_NAME.insert_many(response)
+AttributeError: 'NoneType' object has no attribute 'self'
+2022-06-24 11:15:36,195 - INFO - 127.0.0.1 - - [24/Jun/2022 11:15:36] "[35m[1mGET /fetchAndSaveData HTTP/1.1[0m" 500 -
+2022-06-24 11:15:36,417 - INFO - 127.0.0.1 - - [24/Jun/2022 11:15:36] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2022-06-24 11:15:36,519 - INFO - 127.0.0.1 - - [24/Jun/2022 11:15:36] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2022-06-24 11:15:36,531 - INFO - 127.0.0.1 - - [24/Jun/2022 11:15:36] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-06-24 11:15:36,849 - INFO - 127.0.0.1 - - [24/Jun/2022 11:15:36] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-06-24 11:17:30,801 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\dataAccessLayer\\FetchAndSaveDataLayer.py', reloading
+2022-06-24 11:17:36,897 - ERROR - 'DbConnection' object has no attribute 'DB_NAME'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+AttributeError: 'DbConnection' object has no attribute 'DB_NAME'
+2022-06-24 11:17:36,899 - ERROR - 'FetchAndSaveDataLayer' object has no attribute 'APP_ID'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 32, in fetchUsersData
+    request_header = {"Content-Type": "application/json", "app-id" : self.APP_ID}
+AttributeError: 'FetchAndSaveDataLayer' object has no attribute 'APP_ID'
+2022-06-24 11:17:36,917 - INFO - 127.0.0.1 - - [24/Jun/2022 11:17:36] "[35m[1mGET /fetchAndSaveData HTTP/1.1[0m" 500 -
+2022-06-24 11:17:37,139 - INFO - 127.0.0.1 - - [24/Jun/2022 11:17:37] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2022-06-24 11:17:37,239 - INFO - 127.0.0.1 - - [24/Jun/2022 11:17:37] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2022-06-24 11:17:37,248 - INFO - 127.0.0.1 - - [24/Jun/2022 11:17:37] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-06-24 11:17:37,565 - INFO - 127.0.0.1 - - [24/Jun/2022 11:17:37] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-06-24 11:18:49,349 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\dataAccessLayer\\FetchAndSaveDataLayer.py', reloading
+2022-06-24 11:18:54,033 - ERROR - 'DbConnection' object has no attribute 'DB_NAME'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+AttributeError: 'DbConnection' object has no attribute 'DB_NAME'
+2022-06-24 11:18:54,034 - ERROR - 'FetchAndSaveDataLayer' object has no attribute 'APP_ID'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 32, in fetchUsersData
+    request_header = {"Content-Type": "application/json", "app-id" : self.APP_ID}
+AttributeError: 'FetchAndSaveDataLayer' object has no attribute 'APP_ID'
+2022-06-24 11:18:54,053 - INFO - 127.0.0.1 - - [24/Jun/2022 11:18:54] "[35m[1mGET /fetchAndSaveData HTTP/1.1[0m" 500 -
+2022-06-24 11:18:54,271 - INFO - 127.0.0.1 - - [24/Jun/2022 11:18:54] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2022-06-24 11:18:54,386 - INFO - 127.0.0.1 - - [24/Jun/2022 11:18:54] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2022-06-24 11:18:54,399 - INFO - 127.0.0.1 - - [24/Jun/2022 11:18:54] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-06-24 11:18:54,714 - INFO - 127.0.0.1 - - [24/Jun/2022 11:18:54] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-06-24 11:18:57,231 - ERROR - 'DbConnection' object has no attribute 'DB_NAME'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+AttributeError: 'DbConnection' object has no attribute 'DB_NAME'
+2022-06-24 11:18:57,231 - ERROR - 'FetchAndSaveDataLayer' object has no attribute 'APP_ID'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 32, in fetchUsersData
+    request_header = {"Content-Type": "application/json", "app-id" : self.APP_ID}
+AttributeError: 'FetchAndSaveDataLayer' object has no attribute 'APP_ID'
+2022-06-24 11:18:57,245 - INFO - 127.0.0.1 - - [24/Jun/2022 11:18:57] "[35m[1mGET /fetchAndSaveData HTTP/1.1[0m" 500 -
+2022-06-24 11:18:57,567 - INFO - 127.0.0.1 - - [24/Jun/2022 11:18:57] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2022-06-24 11:18:57,568 - INFO - 127.0.0.1 - - [24/Jun/2022 11:18:57] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2022-06-24 11:18:57,816 - INFO - 127.0.0.1 - - [24/Jun/2022 11:18:57] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-06-24 11:18:57,883 - INFO - 127.0.0.1 - - [24/Jun/2022 11:18:57] "[36mGET /fetchAndSaveData?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-06-24 11:19:24,066 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\controller\\FetchDataController.py', reloading
+2022-06-24 11:19:28,472 - ERROR - 'DbConnection' object has no attribute 'DB_NAME'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+AttributeError: 'DbConnection' object has no attribute 'DB_NAME'
+2022-06-24 11:19:28,473 - ERROR - 'FetchAndSaveDataLayer' object has no attribute 'APP_ID'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 32, in fetchUsersData
+    request_header = {"Content-Type": "application/json", "app-id" : self.APP_ID}
+AttributeError: 'FetchAndSaveDataLayer' object has no attribute 'APP_ID'
+2022-06-24 11:19:28,474 - INFO - 127.0.0.1 - - [24/Jun/2022 11:19:28] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:20:42,192 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\dataAccessLayer\\FetchAndSaveDataLayer.py', reloading
+2022-06-24 11:20:49,486 - ERROR - 'DbConnection' object has no attribute 'DB_NAME'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+AttributeError: 'DbConnection' object has no attribute 'DB_NAME'
+2022-06-24 11:20:49,487 - ERROR - 'FetchAndSaveDataLayer' object has no attribute 'APP_ID'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 32, in fetchUsersData
+    request_header = {"Content-Type": "application/json", "app-id" : self.APP_ID}
+AttributeError: 'FetchAndSaveDataLayer' object has no attribute 'APP_ID'
+2022-06-24 11:20:49,488 - INFO - 127.0.0.1 - - [24/Jun/2022 11:20:49] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:20:56,181 - ERROR - 'DbConnection' object has no attribute 'DB_NAME'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+AttributeError: 'DbConnection' object has no attribute 'DB_NAME'
+2022-06-24 11:20:56,182 - ERROR - 'FetchAndSaveDataLayer' object has no attribute 'APP_ID'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 32, in fetchUsersData
+    request_header = {"Content-Type": "application/json", "app-id" : self.APP_ID}
+AttributeError: 'FetchAndSaveDataLayer' object has no attribute 'APP_ID'
+2022-06-24 11:20:56,183 - INFO - 127.0.0.1 - - [24/Jun/2022 11:20:56] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:21:19,951 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\dataAccessLayer\\FetchAndSaveDataLayer.py', reloading
+2022-06-24 11:21:49,056 - ERROR - 'DbConnection' object has no attribute 'DB_NAME'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+AttributeError: 'DbConnection' object has no attribute 'DB_NAME'
+2022-06-24 11:21:50,017 - ERROR - 'NoneType' object has no attribute 'self'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 35, in fetchUsersData
+    db.self.DB_NAME.self.USERS_COLLECTION_NAME.insert_many(response)
+AttributeError: 'NoneType' object has no attribute 'self'
+2022-06-24 11:21:50,019 - INFO - 127.0.0.1 - - [24/Jun/2022 11:21:50] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:23:25,007 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\dataAccessLayer\\FetchAndSaveDataLayer.py', reloading
+2022-06-24 11:23:40,482 - ERROR - 'DbConnection' object has no attribute 'DB_NAME'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+AttributeError: 'DbConnection' object has no attribute 'DB_NAME'
+2022-06-24 11:23:41,934 - ERROR - 'NoneType' object has no attribute 'db_name'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 36, in fetchUsersData
+    db.db_name.collection_name.insert_many(response)
+AttributeError: 'NoneType' object has no attribute 'db_name'
+2022-06-24 11:23:41,935 - INFO - 127.0.0.1 - - [24/Jun/2022 11:23:41] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:24:07,945 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\dataAccessLayer\\FetchAndSaveDataLayer.py', reloading
+2022-06-24 11:24:11,922 - ERROR - 'DbConnection' object has no attribute 'DB_NAME'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+AttributeError: 'DbConnection' object has no attribute 'DB_NAME'
+2022-06-24 11:24:12,657 - ERROR - 'NoneType' object has no attribute 'db_name'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 37, in fetchUsersData
+    db.db_name.collection_name.insert_many(response)
+AttributeError: 'NoneType' object has no attribute 'db_name'
+2022-06-24 11:24:12,658 - INFO - 127.0.0.1 - - [24/Jun/2022 11:24:12] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:29:20,134 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\dataAccessLayer\\FetchAndSaveDataLayer.py', reloading
+2022-06-24 11:29:30,105 - ERROR - 'DbConnection' object has no attribute 'DB_NAME'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+AttributeError: 'DbConnection' object has no attribute 'DB_NAME'
+2022-06-24 11:29:30,836 - ERROR - 'NoneType' object has no attribute 'collection_name'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 37, in fetchUsersData
+    db.collection_name.insert_many(response)
+AttributeError: 'NoneType' object has no attribute 'collection_name'
+2022-06-24 11:29:30,837 - INFO - 127.0.0.1 - - [24/Jun/2022 11:29:30] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:29:47,021 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\dataAccessLayer\\FetchAndSaveDataLayer.py', reloading
+2022-06-24 11:29:50,416 - ERROR - 'DbConnection' object has no attribute 'DB_NAME'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+AttributeError: 'DbConnection' object has no attribute 'DB_NAME'
+2022-06-24 11:29:51,183 - ERROR - 'NoneType' object has no attribute 'insert_many'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 37, in fetchUsersData
+    db.insert_many(response)
+AttributeError: 'NoneType' object has no attribute 'insert_many'
+2022-06-24 11:29:51,184 - INFO - 127.0.0.1 - - [24/Jun/2022 11:29:51] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:30:28,855 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\dataAccessLayer\\DbConnection.py', reloading
+2022-06-24 11:30:57,398 - ERROR - name must be an instance of str
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\mongo_client.py", line 1473, in __getitem__
+    return database.Database(self, name)
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\database.py", line 132, in __init__
+    raise TypeError("name must be an instance of str")
+TypeError: name must be an instance of str
+2022-06-24 11:30:58,185 - ERROR - 'NoneType' object has no attribute 'db_name'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 37, in fetchUsersData
+    db.db_name.collection_name.insert_many(response)
+AttributeError: 'NoneType' object has no attribute 'db_name'
+2022-06-24 11:30:58,189 - INFO - 127.0.0.1 - - [24/Jun/2022 11:30:58] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:31:37,028 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\dataAccessLayer\\DbConnection.py', reloading
+2022-06-24 11:31:54,407 - ERROR - name must be an instance of str
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\mongo_client.py", line 1473, in __getitem__
+    return database.Database(self, name)
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\database.py", line 132, in __init__
+    raise TypeError("name must be an instance of str")
+TypeError: name must be an instance of str
+2022-06-24 11:31:56,008 - ERROR - 'NoneType' object has no attribute 'db_name'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 37, in fetchUsersData
+    db.db_name.collection_name.insert_many(response)
+AttributeError: 'NoneType' object has no attribute 'db_name'
+2022-06-24 11:31:56,010 - INFO - 127.0.0.1 - - [24/Jun/2022 11:31:56] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:32:53,200 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\dataAccessLayer\\DbConnection.py', reloading
+2022-06-24 11:32:59,504 - ERROR - name must be an instance of str
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\mongo_client.py", line 1473, in __getitem__
+    return database.Database(self, name)
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\database.py", line 132, in __init__
+    raise TypeError("name must be an instance of str")
+TypeError: name must be an instance of str
+2022-06-24 11:33:00,321 - ERROR - 'NoneType' object has no attribute 'db_name'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 37, in fetchUsersData
+    db.db_name.collection_name.insert_many(response)
+AttributeError: 'NoneType' object has no attribute 'db_name'
+2022-06-24 11:33:00,323 - INFO - 127.0.0.1 - - [24/Jun/2022 11:33:00] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:36:10,910 - ERROR - document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 37, in fetchUsersData
+    db.db_name.collection_name.insert_many(response)
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\collection.py", line 690, in insert_many
+    blk.ops = [doc for doc in gen()]
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\collection.py", line 690, in <listcomp>
+    blk.ops = [doc for doc in gen()]
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\collection.py", line 681, in gen
+    common.validate_is_document_type("document", document)
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\common.py", line 512, in validate_is_document_type
+    raise TypeError(
+TypeError: document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+2022-06-24 11:36:10,945 - INFO - 127.0.0.1 - - [24/Jun/2022 11:36:10] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:36:49,347 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\dataAccessLayer\\FetchAndSaveDataLayer.py', reloading
+2022-06-24 11:37:00,129 - ERROR - name must be an instance of str
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\mongo_client.py", line 1473, in __getitem__
+    return database.Database(self, name)
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\database.py", line 132, in __init__
+    raise TypeError("name must be an instance of str")
+TypeError: name must be an instance of str
+2022-06-24 11:37:00,957 - ERROR - 'NoneType' object has no attribute 'db_name'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 38, in fetchUsersData
+    db.db_name.collection_name.insert_many(json.dumps(response))
+AttributeError: 'NoneType' object has no attribute 'db_name'
+2022-06-24 11:37:00,958 - INFO - 127.0.0.1 - - [24/Jun/2022 11:37:00] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:37:50,047 - ERROR - Object of type Response is not JSON serializable
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 38, in fetchUsersData
+    db.db_name.collection_name.insert_many(json.dumps(response))
+  File "C:\Program Files\Python38\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Program Files\Python38\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python38\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Program Files\Python38\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Response is not JSON serializable
+2022-06-24 11:37:50,071 - INFO - 127.0.0.1 - - [24/Jun/2022 11:37:50] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:38:04,549 - ERROR - Object of type Response is not JSON serializable
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 38, in fetchUsersData
+    db.db_name.collection_name.insert_many(json.dumps(response))
+  File "C:\Program Files\Python38\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Program Files\Python38\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python38\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Program Files\Python38\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Response is not JSON serializable
+2022-06-24 11:38:04,551 - INFO - 127.0.0.1 - - [24/Jun/2022 11:38:04] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:38:35,941 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\dataAccessLayer\\FetchAndSaveDataLayer.py', reloading
+2022-06-24 11:38:44,103 - ERROR - name must be an instance of str
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\mongo_client.py", line 1473, in __getitem__
+    return database.Database(self, name)
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\database.py", line 132, in __init__
+    raise TypeError("name must be an instance of str")
+TypeError: name must be an instance of str
+2022-06-24 11:38:45,084 - ERROR - 'NoneType' object has no attribute 'db_name'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 39, in fetchUsersData
+    db.db_name.collection_name.insert_many(json.dumps(response))
+AttributeError: 'NoneType' object has no attribute 'db_name'
+2022-06-24 11:38:45,085 - INFO - 127.0.0.1 - - [24/Jun/2022 11:38:45] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:40:12,130 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\dataAccessLayer\\FetchAndSaveDataLayer.py', reloading
+2022-06-24 11:40:25,031 - ERROR - name must be an instance of str
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\mongo_client.py", line 1473, in __getitem__
+    return database.Database(self, name)
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\database.py", line 132, in __init__
+    raise TypeError("name must be an instance of str")
+TypeError: name must be an instance of str
+2022-06-24 11:40:26,001 - ERROR - byte indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 39, in fetchUsersData
+    for data in response.content['data']:
+TypeError: byte indices must be integers or slices, not str
+2022-06-24 11:40:26,003 - INFO - 127.0.0.1 - - [24/Jun/2022 11:40:26] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:41:18,941 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\dataAccessLayer\\FetchAndSaveDataLayer.py', reloading
+2022-06-24 11:41:24,194 - ERROR - name must be an instance of str
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\mongo_client.py", line 1473, in __getitem__
+    return database.Database(self, name)
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\database.py", line 132, in __init__
+    raise TypeError("name must be an instance of str")
+TypeError: name must be an instance of str
+2022-06-24 11:41:25,077 - ERROR - 'bytes' object has no attribute 'json'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 38, in fetchUsersData
+    print(response.content.json())
+AttributeError: 'bytes' object has no attribute 'json'
+2022-06-24 11:41:25,079 - INFO - 127.0.0.1 - - [24/Jun/2022 11:41:25] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:41:53,235 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\dataAccessLayer\\FetchAndSaveDataLayer.py', reloading
+2022-06-24 11:41:56,353 - ERROR - name must be an instance of str
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\mongo_client.py", line 1473, in __getitem__
+    return database.Database(self, name)
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\database.py", line 132, in __init__
+    raise TypeError("name must be an instance of str")
+TypeError: name must be an instance of str
+2022-06-24 11:41:57,382 - ERROR - byte indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 39, in fetchUsersData
+    for data in json.dumps(response.content['data']):
+TypeError: byte indices must be integers or slices, not str
+2022-06-24 11:41:57,384 - INFO - 127.0.0.1 - - [24/Jun/2022 11:41:57] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:42:35,144 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\dataAccessLayer\\FetchAndSaveDataLayer.py', reloading
+2022-06-24 11:43:13,165 - ERROR - name must be an instance of str
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\mongo_client.py", line 1473, in __getitem__
+    return database.Database(self, name)
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\database.py", line 132, in __init__
+    raise TypeError("name must be an instance of str")
+TypeError: name must be an instance of str
+2022-06-24 11:43:13,925 - ERROR - byte indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 38, in fetchUsersData
+    print(json.dumps(response.content['data']))
+TypeError: byte indices must be integers or slices, not str
+2022-06-24 11:43:13,928 - INFO - 127.0.0.1 - - [24/Jun/2022 11:43:13] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:43:49,055 - ERROR - byte indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 38, in fetchUsersData
+    print(json.dumps(response.content['data']))
+TypeError: byte indices must be integers or slices, not str
+2022-06-24 11:43:49,056 - INFO - 127.0.0.1 - - [24/Jun/2022 11:43:49] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:44:48,697 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\dataAccessLayer\\FetchAndSaveDataLayer.py', reloading
+2022-06-24 11:44:51,421 - ERROR - name must be an instance of str
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\mongo_client.py", line 1473, in __getitem__
+    return database.Database(self, name)
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\database.py", line 132, in __init__
+    raise TypeError("name must be an instance of str")
+TypeError: name must be an instance of str
+2022-06-24 11:44:52,140 - ERROR - byte indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 39, in fetchUsersData
+    print(json.dumps(response.content['data']))
+TypeError: byte indices must be integers or slices, not str
+2022-06-24 11:44:52,141 - INFO - 127.0.0.1 - - [24/Jun/2022 11:44:52] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:45:44,951 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\dataAccessLayer\\FetchAndSaveDataLayer.py', reloading
+2022-06-24 11:45:49,383 - ERROR - name must be an instance of str
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\mongo_client.py", line 1473, in __getitem__
+    return database.Database(self, name)
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\database.py", line 132, in __init__
+    raise TypeError("name must be an instance of str")
+TypeError: name must be an instance of str
+2022-06-24 11:45:50,146 - ERROR - 'NoneType' object has no attribute 'db_name'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 41, in fetchUsersData
+    db.db_name.collection_name.insert(data)
+AttributeError: 'NoneType' object has no attribute 'db_name'
+2022-06-24 11:45:50,148 - INFO - 127.0.0.1 - - [24/Jun/2022 11:45:50] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:46:02,991 - ERROR - 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 41, in fetchUsersData
+    db.db_name.collection_name.insert(data)
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\collection.py", line 3166, in __call__
+    raise TypeError(
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+2022-06-24 11:46:03,014 - INFO - 127.0.0.1 - - [24/Jun/2022 11:46:03] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:46:24,021 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\dataAccessLayer\\FetchAndSaveDataLayer.py', reloading
+2022-06-24 11:46:29,243 - ERROR - name must be an instance of str
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\mongo_client.py", line 1473, in __getitem__
+    return database.Database(self, name)
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\database.py", line 132, in __init__
+    raise TypeError("name must be an instance of str")
+TypeError: name must be an instance of str
+2022-06-24 11:46:30,114 - ERROR - 'NoneType' object has no attribute 'db_name'
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 41, in fetchUsersData
+    db.db_name.collection_name.insert_one(data)
+AttributeError: 'NoneType' object has no attribute 'db_name'
+2022-06-24 11:46:30,115 - INFO - 127.0.0.1 - - [24/Jun/2022 11:46:30] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:46:59,981 - INFO - 127.0.0.1 - - [24/Jun/2022 11:46:59] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:47:46,163 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\dataAccessLayer\\FetchAndSaveDataLayer.py', reloading
+2022-06-24 11:47:53,319 - ERROR - name must be an instance of str
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\mongo_client.py", line 1473, in __getitem__
+    return database.Database(self, name)
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\database.py", line 132, in __init__
+    raise TypeError("name must be an instance of str")
+TypeError: name must be an instance of str
+2022-06-24 11:47:56,163 - ERROR - 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 41, in fetchUsersData
+    db[self.DB_NAME][self.USERS_COLLECTION_NAME].insert_one(data)
+TypeError: 'NoneType' object is not subscriptable
+2022-06-24 11:47:56,164 - INFO - 127.0.0.1 - - [24/Jun/2022 11:47:56] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:48:10,250 - INFO - 127.0.0.1 - - [24/Jun/2022 11:48:10] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:52:37,710 - INFO -  * Detected change in 'D:\\Learning\\Dummy_Project\\fetch_api_and_save_data_in_db\\app\\dataAccessLayer\\DbConnection.py', reloading
+2022-06-24 11:59:40,346 - ERROR - name must be an instance of str
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\DbConnection.py", line 21, in getDbConnection
+    myDb = myClient[self.DB_NAME]
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\mongo_client.py", line 1473, in __getitem__
+    return database.Database(self, name)
+  File "C:\Users\Z0043FVW\AppData\Roaming\Python\Python38\site-packages\pymongo\database.py", line 132, in __init__
+    raise TypeError("name must be an instance of str")
+TypeError: name must be an instance of str
+2022-06-24 11:59:41,838 - ERROR - 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "D:\Learning\Dummy_Project\fetch_api_and_save_data_in_db\app\dataAccessLayer\FetchAndSaveDataLayer.py", line 41, in fetchUsersData
+    db[self.DB_NAME][self.USERS_COLLECTION_NAME].insert_one(data)
+TypeError: 'NoneType' object is not subscriptable
+2022-06-24 11:59:41,839 - INFO - 127.0.0.1 - - [24/Jun/2022 11:59:41] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 11:59:54,811 - INFO - 127.0.0.1 - - [24/Jun/2022 11:59:54] "GET /fetchAndSaveData HTTP/1.1" 200 -
+2022-06-24 12:01:26,350 - INFO - 127.0.0.1 - - [24/Jun/2022 12:01:26] "GET /fetchAndSaveData HTTP/1.1" 200 -
