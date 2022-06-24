@@ -15,13 +15,13 @@ class DbConnection:
         self.USERS_COLLECTION_NAME = os.getenv('USERS_COLLECTION_NAME')
         self.USERS_POST_DATA_COLLECTION_NAME = os.getenv('USERS_POST_DATA_COLLECTION_NAME')
 
+    # Establishing mongodb database connection on default host and port
     def getDbConnection(self):
         try:
             myClient = pymongo.MongoClient("mongodb://localhost:27017/")
             myDb = myClient[self.DB_NAME]
             myUsersCollection = myDb[self.USERS_COLLECTION_NAME]
             myPostDataCollection = myDb[self.USERS_POST_DATA_COLLECTION_NAME]
-            # print('myclient', myClient)
             return myClient
         except Exception as error:
             print('Database access error occured....!')

@@ -5,6 +5,7 @@ from dotenv import load_dotenv, find_dotenv
 
 
 class FetchAndSaveService:
+
     def __init__(self, fetchAndSaveDataLayer):
         self.fetchAndSaveDataLayer = fetchAndSaveDataLayer
         print("Initialized 'Fetch and Save Data' service....!")
@@ -13,6 +14,7 @@ class FetchAndSaveService:
         self.USERS_DATA_URL = os.getenv('USERS_DATA_URL')
         self.USERS_POSTS_DATA = os.getenv('USERS_POSTS_DATA')
     
+    # This service layer method calls the external API to get the users data
     def fetchAndSaveUersDataService(self):
         
         try:
@@ -26,7 +28,9 @@ class FetchAndSaveService:
             print(error.__class__, "occurred.")
             logging.exception(str(error))
         
-    
+    # This service layer methos calls data layer method to get all the user-ids stored 
+    # in users table and on the basis of each user-ids, it calls external api to get
+    # users post data
     def fetchAndSaveUsersPostDataService(self):
 
         try:
@@ -35,7 +39,6 @@ class FetchAndSaveService:
             for single_user_id in user_id_list:
                 updated_url = self.USERS_POSTS_DATA.replace('{{user_id}}', single_user_id)
                 response = requests.get(url=updated_url, headers=request_header)
-                # for data in response.json()['data']:
                 users_post_data = {single_user_id : response.json()['data']}
                 self.fetchAndSaveDataLayer.saveUsersPostData(users_post_data)
             return 1

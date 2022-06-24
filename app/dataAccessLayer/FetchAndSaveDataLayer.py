@@ -21,7 +21,7 @@ class FetchAndSaveDataLayer:
                         format= '%(asctime)s - %(levelname)s - %(message)s',
                         )
 
-    
+    # This method saves the users data, received from service layer, into db
     def saveUsersData(self, response):
 
         db=self.dbConnection.getDbConnection() 
@@ -35,7 +35,7 @@ class FetchAndSaveDataLayer:
             print(excep.__class__, "occurred.")
             logging.exception(str(excep))   
 
-
+    # This method extracts all the user-ids stored into db and send it back to service layer
     def retrieveUsersDataFromDb(self):
 
         db=self.dbConnection.getDbConnection()
@@ -52,12 +52,10 @@ class FetchAndSaveDataLayer:
             print(excep.__class__, "occurred.")
             logging.exception(str(excep))
 
-
+    # This method saves the users post data, received from service layer, into db
     def saveUsersPostData(self, response_data):
         
         db=self.dbConnection.getDbConnection()
-        # print(response.json())
-        # time.sleep(1000)
         try:
             db[self.DB_NAME][self.USERS_POST_DATA_COLLECTION_NAME].\
                             insert_one(response_data)
