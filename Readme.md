@@ -1,5 +1,5 @@
 # Steps to run the application : 
---
+
 **Step - 1 :** Install mongodb, python 3.x
 
 **Step - 2 :** Open cmd/terminal and run mongodb using `mongod` command
